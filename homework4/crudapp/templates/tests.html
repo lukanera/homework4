@@ -1,0 +1,18 @@
+<a href="{% url  'create_test' %}"> create new test</a>
+
+<br>
+<br>
+<br>
+
+{% for test in test %}
+    <a href="{% url 'test' test.id %}">{{test.test_field}}</a>  
+
+<br>
+    
+    
+{%endfor%}
+<br>
+
+    <a href="{% url 'tests' %}"> go back</a>
+
+</form>
